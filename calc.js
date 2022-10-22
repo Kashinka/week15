@@ -17,12 +17,16 @@ function showMessage() {
             document.getElementById('result').innerHTML = Number(x) + Number(y); break;
         case '-':
             document.getElementById('result').innerHTML = Number(x) - Number(y); break;
-        case '/':
-            document.getElementById('result').innerHTML = Number(x) / Number(y); 
-            if (y="0") {
-                document.getElementById('result').innerHTML = ('На ноль делить нельзя!');
-            }
+
+            case '/':
+                if (Number(y) === 0) {
+                    document.getElementById('result').innerHTML = ('На ноль делить нельзя!');
+                    break;
+                }
+                
+            document.getElementById('result').innerHTML = Number(x) / Number(y);
             break;
+
         case '*':
             document.getElementById('result').innerHTML = Number(x) * Number(y); break;
         default:
