@@ -14,13 +14,13 @@ function showMessage() {
 
     switch (result) {
         case '+':
-            result = document.getElementById('result').innerHTML = Number(x) + Number(y); break;
+            document.getElementById('result').innerHTML = Number(x) + Number(y); break;
         case '-':
-            result = document.getElementById('result').innerHTML = Number(x) - Number(y); break;
+            document.getElementById('result').innerHTML = Number(x) - Number(y); break;
         case '/':
-            result = document.getElementById('result').innerHTML = Number(x) / Number(y); break;
+            document.getElementById('result').innerHTML = Number(x) / Number(y); break;
         case '*':
-            result = document.getElementById('result').innerHTML = Number(x) * Number(y); break;
+            document.getElementById('result').innerHTML = Number(x) * Number(y); break;
         case '/0':
             y = 0;
             alert('На ноль делить нельзя!');
