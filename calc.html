@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+    <h1 class="heading">Калькулятор</h1>
+    <div class="container-fluid">
+        <input type="text" placeholder="Введите первое число" id="x">
+        <button class="btn-push" type="button" onclick="showMessage()" hidden>Ввод</button>
+        <input type="text" placeholder="Введите второе число" id="y">
+        <button class="btn-push" type="button" onclick="showMessage()" hidden>Ввод</button>
+        <input type="text" placeholder="Операция (+ - / *)" id="operation">
+        <button class="btn-push" type="button" onclick="showMessage()">Ввод</button>
+    </div>
+    <div id="result" class="operation"></div>
+    <script src="./calc.js"></script>
+</body>
+
+</html>
