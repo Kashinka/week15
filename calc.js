@@ -5,16 +5,30 @@
 function showMessage() {
 
     let x = document.getElementById('x').value;
-    
-    // console.log(x);
 
     let y = document.getElementById('y').value;
-    
-    // console.log(y);
 
     let operation = document.getElementById('operation').value;
 
-    if (operation==="+"){
+    let result = operation;
+
+    switch (result) {
+        case '+':
+            result = document.getElementById('result').innerHTML = Number(x) + Number(y); break;
+        case '-':
+            result = document.getElementById('result').innerHTML = Number(x) - Number(y); break;
+        case '/':
+            result = document.getElementById('result').innerHTML = Number(x) / Number(y); break;
+        case '*':
+            result = document.getElementById('result').innerHTML = Number(x) * Number(y); break;
+        case '/0':
+            y = 0;
+            alert('На ноль делить нельзя!');
+        default:
+            alert('Ошибка!');
+}
+
+    /* if (operation==="+"){
 
         document.getElementById('result').innerHTML = Number(x) + Number(y);
 
@@ -38,4 +52,4 @@ function showMessage() {
 
     }
 
-    }
+    } */
