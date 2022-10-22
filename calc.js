@@ -18,12 +18,13 @@ function showMessage() {
         case '-':
             document.getElementById('result').innerHTML = Number(x) - Number(y); break;
         case '/':
-            document.getElementById('result').innerHTML = Number(x) / Number(y); break;
+            document.getElementById('result').innerHTML = Number(x) / Number(y); 
+            if (y="0") {
+                alert('На ноль делить нельзя!');
+            }
+            break;
         case '*':
             document.getElementById('result').innerHTML = Number(x) * Number(y); break;
-        case '/0':
-            y = 0;
-            alert('На ноль делить нельзя!');
         default:
             alert('Ошибка!');
 }
