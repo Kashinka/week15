@@ -28,6 +28,8 @@ function showMessage() {
             alert('Ошибка!');
 }
 
+}
+
     /* if (operation==="+"){
 
         document.getElementById('result').innerHTML = Number(x) + Number(y);
