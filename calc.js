@@ -20,7 +20,6 @@ function showMessage() {
         case '/':
             document.getElementById('result').innerHTML = Number(x) / Number(y); 
             if (y="0") {
-                alert('На ноль делить нельзя!');
                 document.getElementById('result').innerHTML = ('На ноль делить нельзя!');
             }
             break;
