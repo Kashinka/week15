@@ -10,7 +10,7 @@ function showMessage() {
 
     let confirm = document.getElementById('confirm').value;
 
-    if (name, email, username, password, confirm === '') {
+    if (name === '') {
 
         document.getElementById('result').innerHTML = (`Ошибка!`);
 
@@ -19,3 +19,45 @@ function showMessage() {
         document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
 
     }
+
+    if (email === '') {
+
+        document.getElementById('result').innerHTML = (`Ошибка!`);
+
+    } else {
+
+        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
+
+    }
+
+    if (username === '') {
+
+        document.getElementById('result').innerHTML = (`Ошибка!`);
+
+    } else {
+
+        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
+
+    }
+
+    if (password=== '') {
+
+        document.getElementById('result').innerHTML = (`Ошибка!`);
+
+    } else {
+
+        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
+
+    }
+
+    if (confirm === '') {
+
+        document.getElementById('result').innerHTML = (`Ошибка!`);
+
+    } else {
+
+        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
+
+    }
+
+}
