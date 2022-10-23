@@ -12,9 +12,9 @@
     <div class="container">
         <form>
             <p>Выберите тему:
-                <select theme="color">
-                    <option onclick="hangeBackgroundToWhite(color)" value="th1" selected>Белая</option>
-                    <option onclick="hangeBackgroundToBlue(color)" value="th2">Синяя</option>
+                <select theme="color" onChange="onChangeTheme()" id="select-theme">
+                    <option onsubmit="hangeBackgroundToWhite(color)" value="th1" selected>Белая</option>
+                    <option onsubmit="hangeBackgroundToBlue(color)" value="th2">Синяя</option>
                     <option onclick="hangeBackgroundToBlack(color)" value="th3">Черная</option>
                     </select>
             </p>

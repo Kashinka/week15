@@ -1,23 +1,19 @@
-function hangeBackgroundToWhite(color) {
+function onChangeTheme() {
 
-    document.body.style.background = color;
+    let selectTheme = document.getElementById('select-theme')
+    
+switch (selectTheme.value) {
+
+    case 'th1':
+        document.body.style.backgroundColor = 'white';
+    break;
+    case 'th2':
+        document.body.style.backgroundColor = 'blue';
+        break;
+    case 'th3':
+        document.body.style.backgroundColor = 'black';
+        break;
+
+    }
     
 }
-
-window.addEventListener("load",function() { changeBackgroundToWhite('white') });
-
-function hangeBackgroundToBlue(color) {
-
-    document.body.style.background = color;
-
-}
-
-window.addEventListener("load",function() { changeBackgroundToBlue('blue') });
-
-function hangeBackgroundToBlack(color) {
-
-    document.body.style.background = color;
-
-}
-
-window.addEventListener("load",function() { changeBackgroundToBlack('black') });
