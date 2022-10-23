@@ -56,7 +56,7 @@ function showMessage() {
 
     } else {
 
-        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}`);
+        document.getElementById('result').innerHTML = (`Добро пожаловать, ${name}!`);
 
     }
 
