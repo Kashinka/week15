@@ -4,8 +4,6 @@ function showMessage() {
 
     let name = document.getElementById('name').value;
 
-    let result = input;
-
     if (input === '') {
             document.getElementById('result').innerHTML = (`Ошибка!`);
             break;
